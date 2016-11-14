@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#cdf2d3"
+        android:layout_alignBottom="@+id/pin">
+        <TextView
+            android:id="@+id/time"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="2016/11/11"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/icon_up"
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/green"
+        />
+    <TextView
+        android:id="@+id/memo_text"
+        android:layout_below="@+id/pin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:minLines="5"
+        android:maxLines="20"
+        android:textSize="20dp"
+        android:background="#e4fbe7"/>
+
+</RelativeLayout>
